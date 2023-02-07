@@ -1,5 +1,5 @@
 
-class Locator:
+class Locators:
     # sign up 1
     home = "//body/nav[@id='narvbarx']/div[@id='navbarExample']/ul[1]/li[1]/a[1]"
     url = "https://www.demoblaze.com/index.html"
@@ -27,6 +27,13 @@ class Locator:
     loginn_name = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]"
     loginn_password = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[2]/input[1]"
     loginn_button = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[3]/button[2]"
+
+    # login correctly 4
+    loginno = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[5]/a[1]"
+    loginno_name = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[1]/input[1]"
+    loginno_password = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[2]/input[1]"
+    loginno_button = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[3]/button[2]"
+    loginno_out = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[6]/a[1]"
 
     # login incorrect password 5
     loginn_incorrect_home = "//body/nav[@id='narvbarx']/div[@id='navbarExample']/ul[1]/li[1]/a[1]"
@@ -67,6 +74,7 @@ class Locator:
     incorrect_credit_month = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[5]/input[1]"
     incorrect_credit_year = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/form[1]/div[6]/input[1]"
     incorrect_credit_purchase= "/html[1]/body[1]/div[3]/div[1]/div[1]/div[3]/button[2]"
+    incorrect_credit_ok = "/html[1]/body[1]/div[10]/div[7]/div[1]/button[1]"
     incorrect_credit_close = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[3]/button[1]"
 
     #cheking order without country 8
@@ -122,13 +130,15 @@ class Locator:
 
     ### cheking about us 13
     about_us_home = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[3]/a[1]"
-    about_us_play = "//body/div[@id='videoModal']/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/button[1]/span[1]"
-    about_us_fulscreen = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[4]/span[1]"
-    about_us_miniScreen = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[4]/span[1]"
+    about_us_header= "//body/div[@id='videoModal']/div[1]/div[1]/div[1]"
+    about_us_play = "//body/div[@id='videoModal']/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/button[1]"
+    # about_us_fulscreen = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[4]/span[1]"
+    # about_us_miniScreen = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[4]/span[1]"
     about_us_mute = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/button[1]/span[1]"
-    about_us_pause = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[1]/span[1]"
-    about_us_screenshut = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[3]/span[1]"
-    about_us_close = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[3]/button[1]"
+    # about_us_pause = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[1]/span[1]"
+    # about_us_screenshut = "/html[1]/body[1]/div[4]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/button[3]/span[1]"
+    about_us_close = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[8]/a[1]"
+    about_us_ho2 = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]"
 
     ## is display 14
     display_home = "//body/nav[@id='narvbarx']/div[@id='navbarExample']/ul[1]/li[1]/a[1]"
@@ -190,6 +200,29 @@ class Locator:
     contactUs_noac_cont = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[2]/a[1]"
     contactUs_noac_message = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[3]/textarea[1]"
     contactUs_noac_sendMessage = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/button[2]"
+
+    back_gcolore = "/html[1]/body[1]/nav[1]/div[1]"
+
+    phones_home = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]"
+    phones_cate ="/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[2]"
+    phones_item = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[5]/div[1]/a[1]/img[1]"
+    phones_name = "//h2[contains(text(),'Iphone 6 32gb')]"
+    phones_add = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[2]/div[1]/a[1]"
+    phones_home1 = "/html[1]/body[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+
+    laptops_home = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]"
+    laptops_cate = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[3]"
+    laptops_item = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]/img[1]"
+    laptops_name = "//h2[contains(text(),'MacBook air')]"
+    laptops_add = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[2]/div[1]/a[1]"
+    laptops_home1 = "/html[1]/body[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
+
+    monitors_home = "/html[1]/body[1]/nav[1]/div[1]/ul[1]/li[1]/a[1]"
+    monitors_cate = "/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/a[4]"
+    monitors_item = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[1]/div[2]/div[1]/a[1]/img[1]"
+    monitors_name = "//h2[contains(text(),'ASUS Full HD')]"
+    monitors_add = "/html[1]/body[1]/div[5]/div[1]/div[2]/div[2]/div[1]/a[1]"
+    monitors_home1 = "/html[1]/body[1]/nav[1]/div[1]/div[1]/ul[1]/li[1]/a[1]"
 
 
 

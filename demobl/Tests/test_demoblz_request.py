@@ -16,6 +16,3 @@ for Items in response:
   print(Items)
 
 print(response.text)
-
-
-

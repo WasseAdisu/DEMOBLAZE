@@ -41,7 +41,6 @@ class BasePage:
         image_path = image_div.find_element(By.TAG_NAME, "img").get_property('src')
         return image_path
 
-
     def check_product(self, errpath):
         self._wait_until_element_is_visible(errpath)
         return self._find(By.XPATH, errpath).text
@@ -61,3 +60,4 @@ class BasePage:
 
     def is_test_display(self, by, locate):
         return self._driver.find_elements(by, locate)
+
